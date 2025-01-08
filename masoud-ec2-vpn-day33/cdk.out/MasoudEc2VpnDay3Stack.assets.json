@@ -1,0 +1,20 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "f3d7d4e1b85d0dcd9298a917ff670bfbd129651fc6a099456ce1dfd13e8ada68": {
+      "source": {
+        "path": "MasoudEc2VpnDay3Stack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "992382386705-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-992382386705-us-east-1",
+          "objectKey": "f3d7d4e1b85d0dcd9298a917ff670bfbd129651fc6a099456ce1dfd13e8ada68.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-file-publishing-role-992382386705-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

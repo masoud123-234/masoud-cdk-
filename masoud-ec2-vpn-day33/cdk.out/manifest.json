@@ -1,0 +1,107 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "MasoudEc2VpnDay3Stack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "MasoudEc2VpnDay3Stack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "MasoudEc2VpnDay3Stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://992382386705/us-east-1",
+      "properties": {
+        "templateFile": "MasoudEc2VpnDay3Stack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-deploy-role-992382386705-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-cfn-exec-role-992382386705-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-992382386705-us-east-1/f3d7d4e1b85d0dcd9298a917ff670bfbd129651fc6a099456ce1dfd13e8ada68.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "MasoudEc2VpnDay3Stack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-lookup-role-992382386705-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "MasoudEc2VpnDay3Stack.assets"
+      ],
+      "metadata": {
+        "/MasoudEc2VpnDay3Stack/masoudvm1/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudvm1InstanceSecurityGroup6FA23B0E"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/masoudvm1/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudvm1InstanceRoleCF9C030C"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/masoudvm1/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudvm1InstanceProfile375552E7"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/masoudvm1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudvm17C025E60"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamznamihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/ashuInstanceID": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ashuInstanceID"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/masoudpublicdns": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudpublicdns"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/MasoudEc2VpnDay3Stack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "MasoudEc2VpnDay3Stack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
