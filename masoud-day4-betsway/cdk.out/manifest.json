@@ -1,0 +1,209 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "MasoudDay4BetswayStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "MasoudDay4BetswayStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "MasoudDay4BetswayStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "MasoudDay4BetswayStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/42221f69cb6cc3c79b603db663558e66b714aab108bd5c3a9466df6eae3ee909.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "MasoudDay4BetswayStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "MasoudDay4BetswayStack.assets"
+      ],
+      "metadata": {
+        "/MasoudDay4BetswayStack/MyBucket0/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucket062C5CFE9"
+          }
+        ],
+        "/MasoudDay4BetswayStack/MyBucket0/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucket0PolicyDD97AC9D"
+          }
+        ],
+        "/MasoudDay4BetswayStack/MyBucket0/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucket0AutoDeleteObjectsCustomResourceC07F3216"
+          }
+        ],
+        "/MasoudDay4BetswayStack/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/MasoudDay4BetswayStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/MasoudDay4BetswayStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/MasoudDay4BetswayStack/MyBucket1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucket1553EAA46"
+          }
+        ],
+        "/MasoudDay4BetswayStack/MyBucket1/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucket1Policy097933E2"
+          }
+        ],
+        "/MasoudDay4BetswayStack/MyBucket1/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucket1AutoDeleteObjectsCustomResourceCB7999E6"
+          }
+        ],
+        "/MasoudDay4BetswayStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/MasoudDay4BetswayStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/MasoudDay4BetswayStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/MasoudDay4BetswayStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "MasoudDay4BetswayStack"
+    },
+    "MasoudDay4ec2all.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "MasoudDay4ec2all.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "MasoudDay4ec2all": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://992382386705/us-east-1",
+      "properties": {
+        "templateFile": "MasoudDay4ec2all.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-deploy-role-992382386705-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-cfn-exec-role-992382386705-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-992382386705-us-east-1/f8d5642edb84196411a10b24b5ea7ed9819a7872fb69268ddd5a68dee7506678.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "MasoudDay4ec2all.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-lookup-role-992382386705-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "MasoudDay4ec2all.assets"
+      ],
+      "metadata": {
+        "/MasoudDay4ec2all/masoudSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudSecurityGroup9D96009E"
+          }
+        ],
+        "/MasoudDay4ec2all/masoudvm1/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudvm1InstanceRoleCF9C030C"
+          }
+        ],
+        "/MasoudDay4ec2all/masoudvm1/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudvm1InstanceProfile375552E7"
+          }
+        ],
+        "/MasoudDay4ec2all/masoudvm1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "masoudvm17C025E60"
+          }
+        ],
+        "/MasoudDay4ec2all/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamznamihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/MasoudDay4ec2all/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/MasoudDay4ec2all/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/MasoudDay4ec2all/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "MasoudDay4ec2all"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

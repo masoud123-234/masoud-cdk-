@@ -1,0 +1,20 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "f8d5642edb84196411a10b24b5ea7ed9819a7872fb69268ddd5a68dee7506678": {
+      "source": {
+        "path": "MasoudDay4ec2all.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "992382386705-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-992382386705-us-east-1",
+          "objectKey": "f8d5642edb84196411a10b24b5ea7ed9819a7872fb69268ddd5a68dee7506678.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-file-publishing-role-992382386705-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
