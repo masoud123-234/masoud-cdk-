@@ -2,7 +2,7 @@ name: Deploy Stack on aws
 on: 
   push: 
     branches:
-      - maiiiin  # when ever any code to pushed to master branch it will trigger
+      - main  # when ever any code to pushed to master branch it will trigger
     
 jobs:  # we are creating jobs to perform steps
   ec2-deploy: # job name 
