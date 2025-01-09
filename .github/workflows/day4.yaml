@@ -70,5 +70,5 @@ jobs:  # we are creating jobs to perform steps
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: ${{ secrets.AWS_REGION }}
       run: |
-        cd ashu-day4-bestway/
+        cd masoud-day4-betsway/
         cdk deploy MasoudDay4BestwayStack --require-approval never 
