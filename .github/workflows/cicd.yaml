@@ -28,7 +28,7 @@ jobs:  # we are creating jobs to perform steps
 
     - name: complie code 
       run: |
-        cd masoud-ec2-vpc-day33
+        cd masoud-ec2-vpn-day33
         cdk synth 
     - name: deploy cdk in aws account 
       env:
@@ -36,5 +36,5 @@ jobs:  # we are creating jobs to perform steps
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: ${{ secrets.AWS_REGION }}
       run: |
-        cd masoud-ec2-vpc-day33
+        cd masoud-ec2-vpn-day33
         cdk deploy --require-approval never 
